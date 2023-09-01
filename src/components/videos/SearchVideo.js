@@ -53,7 +53,7 @@ const SearchVideo = () => {
             <Button
               type="button"
               variant="link"
-              className="peer peer-focus:!text-primary absolute top-1/2 -translate-y-1/2 right-0 hover:!text-primary-darker !shadow-none pe-0"
+              className="peer !text-dark dark:!text-white peer-focus:!text-primary absolute top-1/2 -translate-y-1/2 right-0 hover:!text-primary-darker !shadow-none pe-0"
             >
               <FontAwesomeIcon icon={faPaperPlane} size="lg" />
             </Button>
