@@ -30,7 +30,7 @@ const Downloader = ({ videoURL, data }) => {
     );
 
     webSocket.onopen = () => {
-      console.log("Web socket connected.");
+      console.log("WebSocet connected.");
       webSocket.send(
         JSON.stringify({ type: activeTab, videoURL, title: localized.title })
       );
