@@ -24,7 +24,12 @@ const SearchVideo = () => {
   };
 
   const { data, isLoading } = useQuery(["getVideo", videoURL], {
-    queryFn: () => getVideo(videoId),
+    queryFn: async () => {
+      if (videoURL.length >= 40) {
+        const data = await getVideo(videoId);
+        return data;
+      } else return;
+    },
     refetchOnWindowFocus: false,
   });
 
