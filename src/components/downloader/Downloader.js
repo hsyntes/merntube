@@ -83,7 +83,7 @@ const Downloader = ({ videoURL, data }) => {
           >
             <ul>
               <li>
-                <span className="text-xs bg-green-700 rounded py-0.5 px-2">
+                <span className="text-xs bg-green-700 text-white rounded py-0.5 px-2">
                   Highest Quality
                 </span>
                 <p className="mb-3">{localized.title}</p>
