@@ -17,7 +17,9 @@ const SearchVideo = () => {
   const handleOnChange = (e) => {
     const { value } = e.target;
     setvideoURL(value);
-    setVideoId(value.split("v=").at(1));
+
+    if (value.includes("v=")) setVideoId(value.split("v=").at(1));
+    else setVideoId(value.split("https://youtu.be/").at(1).slice(0, 11));
   };
 
   const { data, isLoading } = useQuery(["getVideo", videoURL], {
