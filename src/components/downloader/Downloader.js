@@ -25,9 +25,7 @@ const Downloader = ({ videoURL, data }) => {
   const handleActiveTab = (tab) => setActiveTab(tab);
 
   const handleDownload = () => {
-    const webSocket = new WebSocket(
-      "ws://merntube-e9de51d6cb98.herokuapp.com/"
-    );
+    const webSocket = new WebSocket("ws://merntube-e9de51d6cb98.herokuapp.com");
 
     webSocket.onopen = () => {
       console.log("Web socket connected.");
