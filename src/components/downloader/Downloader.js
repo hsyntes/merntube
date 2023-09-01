@@ -119,7 +119,7 @@ const Downloader = ({ videoURL, data }) => {
                 href={`https://merntube-e9de51d6cb98.herokuapp.com/merntube/sources/download/${sourceId}`}
                 target="_blank"
                 rel="noreferrer"
-                className="inline-block bg-primary hover:bg-primary-darker font-semibold text-sm rounded shadow px-4 py-2"
+                className="inline-block bg-primary text-white hover:bg-primary-darker font-semibold text-sm rounded shadow px-4 py-2"
                 download
                 onClick={() => setModal(false)}
               >
