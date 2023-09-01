@@ -2,7 +2,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Button from "../ui/Button";
 import Tab from "./Tab";
 import { faDownload } from "@fortawesome/free-solid-svg-icons";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Modal from "../ui/Modal";
 import Progress from "../ui/Progress";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
@@ -10,7 +10,6 @@ import { useLocation } from "react-router-dom";
 
 const Downloader = ({ videoURL, data }) => {
   const location = useLocation();
-  console.log(location);
   const [progress, setProgress] = useState();
   const [sourceId, setsourceId] = useState();
   const [message, setMessage] = useState();
@@ -50,6 +49,11 @@ const Downloader = ({ videoURL, data }) => {
 
     return () => webSocket.close();
   };
+
+  useEffect(() => {
+    if (location)
+      if (location.pathname === "/youtube-to-mp3") setActiveTab("Audio");
+  }, [location]);
 
   return (
     <>
