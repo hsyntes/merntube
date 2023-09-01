@@ -5,7 +5,8 @@ const Button = ({ type, variant, className, onClick, children }) => {
   if (variant === "dark") classes += "bg-dark hover:bg-dark-darker";
   if (variant === "light") classes += "bg-light hover:bg-white";
   if (variant === "white") classes += "bg-white";
-  if (variant === "none") classes += "bg-none text-dark dark:text-white";
+  if (variant === "none")
+    classes += "bg-none text-dark dark:text-white !shadow-none";
   if (variant === "link")
     classes += "shadow-none !text-dark dark:!text-white !px-0 !py-0";
   if (variant === "blue") classes += "bg-blue-700 hover:bg-blue-900 text-white";
