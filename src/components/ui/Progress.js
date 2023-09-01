@@ -10,7 +10,9 @@ const Progress = ({ percentage }) => {
         <p className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
           {isNaN(percentage) ? (
             <center className="flex items-center justify-center">
-              <span className="me-2">Converting</span>
+              <span className={percentage >= 50 ? "text-white ms-2" : "ms-2"}>
+                Converting
+              </span>
               <Spinner size="sm" />
             </center>
           ) : (
