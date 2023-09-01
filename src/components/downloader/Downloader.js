@@ -26,7 +26,9 @@ const Downloader = ({ videoURL, data }) => {
   const handleActiveTab = (tab) => setActiveTab(tab);
 
   const handleDownload = () => {
-    const webSocket = new WebSocket("ws://localhost:8000");
+    const webSocket = new WebSocket(
+      "ws://merntube-e9de51d6cb98.herokuapp.com/"
+    );
 
     webSocket.onopen = () => {
       console.log("Web socket connected.");
@@ -110,7 +112,7 @@ const Downloader = ({ videoURL, data }) => {
             <p className="mb-2">{message}</p>
             {message && (
               <a
-                href={`http://localhost:8000/merntube/sources/download/${sourceId}`}
+                href={`https://merntube-e9de51d6cb98.herokuapp.com/merntube/sources/download/${sourceId}`}
                 target="_blank"
                 rel="noreferrer"
                 className="inline-block bg-primary hover:bg-primary-darker font-semibold text-sm rounded shadow px-4 py-2"
