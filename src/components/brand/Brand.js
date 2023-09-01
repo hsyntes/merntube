@@ -7,7 +7,7 @@ const Brand = () => (
       alt="App"
       className="w-7 lg:w-8"
     />
-    <h1 className="font-bold text-2xl lg:text-3xl ms-2">
+    <h1 className="font-bold text-2xl lg:text-3xl ms-1">
       MERN<span className="text-primary">Tube</span>
     </h1>
   </Link>
