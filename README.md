@@ -1,70 +1,41 @@
-# Getting Started with Create React App
+# MERNTube Frontend
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to the Frontend documentation of MERNTube, a Full Stack Video & Audio downloader in the best quality from YouTube powered by YouTube Data API. This documentation provides an overview of the frontend architecture, components, and key functionalities of the application.
 
-## Available Scripts
+### Backend API
 
-In the project directory, you can run:
+The MERNTube Backend API serves as the core of the MERNTube platform, data management, database schema design, websocket and more. Explore the API documentation for detailed information on endpoints, usage, and integration.
 
-### `npm start`
+Please visit here to see the backend code: [MERNTube - Backend](https://github.com/hsyntes/merntube-api)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Technologies Used
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+React: A JavaScript library for building user interfaces, providing a component-based architecture and efficient rendering.
 
-### `npm test`
+React-Query: A data-fetching library for React applications, enabling seamless data management and caching.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Redux: A state management library, enabling centralized data storage and easy state updates.
 
-### `npm run build`
+React-Router: A routing library for React applications, enabling navigation and URL handling.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Tailwind CSS: A utility-first CSS framework, providing a set of pre-defined classes for styling components.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## React-Query Integration
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+React-Query is used to fetch and manage data in the frontend. The library provides hooks for fetching data from the backend API, caching responses, and handling loading and error states.
 
-### `npm run eject`
+## Redux Integration
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Redux is used for global state management in the frontend. It stores user authentication information, such as the JWT token, and manages user-related actions like logging in and logging out.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## React-Router Integration
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+React-Router is used for client-side routing, allowing smooth navigation between different pages and managing URLs for specific content.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Powerful YouTube Data API
 
-## Learn More
+The YouTube Data API lets you incorporate functions normally executed on the YouTube website into your own website or application. The lists below identify the different types of resources that you can retrieve using the API. The API also supports methods to insert, update, or delete many of these resources.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## 🔗 Contact
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/hsyntes)
