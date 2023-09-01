@@ -1,5 +1,7 @@
 # MERNTube Frontend
 
+[![MERNTube](https://img.icons8.com/external-flat-icons-inmotus-design/96/external-Download-files-documents-operations-flat-icons-inmotus-design.png)](https://merntube.vercel.app/)
+
 Welcome to the Frontend documentation of MERNTube, a Full Stack Video & Audio downloader in the best quality from YouTube powered by YouTube Data API and WebSocket technology. This documentation provides an overview of the frontend architecture, components, and key functionalities of the application.
 
 ### Backend API
@@ -22,6 +24,8 @@ React-Router: A routing library for React applications, enabling navigation and 
 
 Tailwind CSS: A utility-first CSS framework, providing a set of pre-defined classes for styling components.
 
+[![MERNTube](https://merntube.s3.us-east-2.amazonaws.com/merntube-desktop-light-downloading.png)](https://merntube.vercel.app)
+
 ## React-Query Integration
 
 React-Query is used to fetch and manage data in the frontend. The library provides hooks for fetching data from the backend API, caching responses, and handling loading and error states.
@@ -33,6 +37,10 @@ Redux is used for global state management in the frontend. It stores user authen
 ## React-Router Integration
 
 React-Router is used for client-side routing, allowing smooth navigation between different pages and managing URLs for specific content.
+
+## TailwindCSS Styling
+
+[![MERNTube](https://merntube.s3.us-east-2.amazonaws.com/merntube-mobile-light.png)](https://merntube.vercel.app)&emsp;[![MERNTube](https://merntube.s3.us-east-2.amazonaws.com/merntube-mobile-dark.png)](https://merntube.vercel.app)
 
 ## Powerful YouTube Data API
 
