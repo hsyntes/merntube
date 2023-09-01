@@ -5,7 +5,7 @@ import { faMusic, faVideo } from "@fortawesome/free-solid-svg-icons";
 
 const Tab = ({ tabs, activeTab, handleActiveTab, children }) => {
   return (
-    <Card className="!p-0 dark:lg:!bg-black lg:!p-6">
+    <Card className="!p-0 dark:lg:!bg-black lg:!p-6 !shadow-none">
       <Card.Header className="mb-6">
         {tabs?.map((tab) => (
           <Button
