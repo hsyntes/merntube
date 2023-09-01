@@ -43,9 +43,6 @@ const Navbar = () => (
         </NavLink>
       </li>
     </ul>
-    <Button type="button" variant="none" className="block lg:hidden ms-auto">
-      <FontAwesomeIcon icon={faBars} size="xl" />
-    </Button>
   </>
 );
 
