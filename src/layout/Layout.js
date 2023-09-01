@@ -11,10 +11,10 @@ const Layout = () => {
         <Brand />
         <Navbar />
       </header>
-      <main className="my-32">
+      <main className="my-24">
         <SearchVideo />
         <Outlet />
-        <section className="lg:flex lg:items-center lg:justify-evenly my-32">
+        <section className="lg:flex lg:items-center lg:justify-evenly my-24">
           <section className="text-center">
             <img
               src="https://img.icons8.com/arcade/96/packaging.png"
@@ -49,7 +49,7 @@ const Layout = () => {
             <p className="text-lg">Fully compatible with all browsers.</p>
           </section>
         </section>
-        <section className="lg:grid lg:grid-cols-12 lg:gap-3 my-32">
+        <section className="lg:grid lg:grid-cols-12 lg:gap-3 my-24">
           <section className="lg:col-span-8">
             <h6 className="font-semibold text-xl">Instructions</h6>
             <ol className=" lg:list-decimal">
