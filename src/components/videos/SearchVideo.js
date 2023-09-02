@@ -25,7 +25,7 @@ const SearchVideo = () => {
 
   const { data, isLoading } = useQuery(["getVideo", videoURL], {
     queryFn: async () => {
-      if (videoURL.length >= 40) {
+      if (videoURL && videoURL !== "" && videoURL?.length >= 40) {
         const data = await getVideo(videoId);
         return data;
       } else return;
