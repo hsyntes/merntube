@@ -12,7 +12,9 @@ const client = new QueryClient();
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
+    {/* Redux connection */}
     <Provider store={store}>
+      {/* React-Query connection */}
       <QueryClientProvider client={client}>
         <App />
       </QueryClientProvider>

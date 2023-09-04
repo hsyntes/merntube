@@ -10,6 +10,7 @@ import ConverterPage from "./pages/Converter";
 import YoutubeMp3Page from "./pages/YoutubeMp3";
 import ErrorPage from "./pages/Error";
 
+// React-Router pages
 const router = createBrowserRouter([
   {
     path: "/",
@@ -25,6 +26,7 @@ const router = createBrowserRouter([
 ]);
 
 function App() {
+  // Theme redux state
   const themeState = useSelector((state) => state.theme);
   const dispatch = useDispatch();
 
@@ -36,6 +38,7 @@ function App() {
       dispatch(themeSliceActions.switchTheme(e.matches ? "dark" : "light"))
     );
 
+  // When the theme changed
   useEffect(() => {
     const [html, body] = [
       document.querySelector("html"),
