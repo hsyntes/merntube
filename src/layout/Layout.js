@@ -3,7 +3,6 @@ import Brand from "../components/brand/Brand";
 import Navbar from "../components/ui/Navbar";
 import Footer from "../components/footer/Footer";
 import SearchVideo from "../components/videos/SearchVideo";
-import AdsenseAd from "../components/adsense-ad/AdsenseAd";
 
 const Layout = () => {
   return (
@@ -12,10 +11,8 @@ const Layout = () => {
         <Brand />
         <Navbar />
       </header>
-      <AdsenseAd />
       <main className="my-24">
         <SearchVideo />
-        <AdsenseAd />
         <Outlet />
         <section className="lg:flex lg:items-center lg:justify-evenly my-24">
           <section className="text-center">
@@ -75,7 +72,6 @@ const Layout = () => {
           </section>
         </section>
       </main>
-      <AdsenseAd />
       <footer>
         <Footer />
       </footer>
