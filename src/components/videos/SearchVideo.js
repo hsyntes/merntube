@@ -48,7 +48,7 @@ const SearchVideo = () => {
             />
           </h1>
         </Card.Header>
-        <Card.Body className="my-24">
+        <Card.Body className="my-12">
           <Input
             type="text"
             value={videoURL}
