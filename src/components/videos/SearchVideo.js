@@ -11,9 +11,12 @@ import Spinner from "../ui/Spinner";
 import Downloader from "../downloader/Downloader";
 
 const SearchVideo = () => {
+  // Video URL based on the input
   const [videoURL, setvideoURL] = useState();
+  // Video id based on the YouTube
   const [videoId, setVideoId] = useState();
 
+  // URL input when changed
   const handleOnChange = (e) => {
     const { value } = e.target;
     setvideoURL(value);
@@ -23,6 +26,7 @@ const SearchVideo = () => {
     else setVideoId(value.split("v=").at(1));
   };
 
+  // Fetch the video based on video URL
   const { data, isLoading } = useQuery(["getVideo", videoURL], {
     queryFn: async () => {
       if (videoURL && videoURL !== "" && videoURL?.length >= 40) {

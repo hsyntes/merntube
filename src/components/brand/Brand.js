@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 
 const Brand = () => (
+  // Brand
   <Link to="/" className="flex items-center">
     <img
       src="https://img.icons8.com/external-flat-icons-inmotus-design/96/external-Download-files-documents-operations-flat-icons-inmotus-design.png"

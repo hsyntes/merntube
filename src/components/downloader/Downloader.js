@@ -9,21 +9,30 @@ import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { useLocation } from "react-router-dom";
 
 const Downloader = ({ videoURL, data }) => {
+  // Current path on the app
   const location = useLocation();
+  // Progress while video/audio donwloading
   const [progress, setProgress] = useState();
+  // Source _id on MongoDB
   const [sourceId, setsourceId] = useState();
+  // Progress message from WebSocket
   const [message, setMessage] = useState();
+  // Modal status
   const [modal, setModal] = useState();
 
+  // Tabs
   const TABS = ["Video", "Audio"];
 
+  // Searched video based on the url
   const [items] = data?.items;
   const { localized, thumbnails } = items?.snippet;
 
   const [activeTab, setActiveTab] = useState(TABS[0]);
 
+  // Switch the tabs
   const handleActiveTab = (tab) => setActiveTab(tab);
 
+  // Start WebSocket and download video
   const handleDownload = () => {
     const webSocket = new WebSocket(
       "wss://merntube-e9de51d6cb98.herokuapp.com"
@@ -31,11 +40,13 @@ const Downloader = ({ videoURL, data }) => {
 
     webSocket.onopen = () => {
       console.log("WebSocket connected.");
+      // Sedning the type, url and video title to the WebSocket
       webSocket.send(
         JSON.stringify({ type: activeTab, videoURL, title: localized.title })
       );
     };
 
+    // When the WebSocket end
     webSocket.onmessage = (e) => {
       const data = JSON.parse(e.data);
 
@@ -50,6 +61,7 @@ const Downloader = ({ videoURL, data }) => {
     return () => webSocket.close();
   };
 
+  // Switching the tabs based on the current path
   useEffect(() => {
     if (location)
       if (location.pathname === "/youtube-to-mp3") setActiveTab("Audio");
