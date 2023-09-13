@@ -99,7 +99,7 @@ const Downloader = ({ videoURL, data }) => {
                 <span className="text-xs bg-green-700 text-white rounded py-0.5 px-2">
                   Highest Quality
                 </span>
-                <p className="mb-3">{localized.title}</p>
+                <p className="my-3">{localized.title}</p>
                 <Button
                   type="button"
                   variant="primary"
