@@ -1,15 +1,17 @@
-import { NavLink } from "react-router-dom";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { Link, NavLink } from "react-router-dom";
 
 const Navbar = () => (
   <>
-    <ul className="hidden lg:flex items-center ms-auto">
+    <ul className="lg:flex items-center ms-auto">
       <li>
         <NavLink
           to="/youtube-downloader"
           className={({ isActive }) =>
             isActive
-              ? "font-semibold text-primary"
-              : "font-semibold text-gray-500 hover:text-primary transition"
+              ? "hidden lg:block font-semibold text-primary"
+              : "hidden lg:block font-semibold text-gray-500 hover:text-primary transition"
           }
         >
           Downloader
@@ -20,8 +22,8 @@ const Navbar = () => (
           to="/youtube-converter"
           className={({ isActive }) =>
             isActive
-              ? "font-semibold text-primary"
-              : "font-semibold text-gray-500 hover:text-primary transition"
+              ? "hidden lg:block font-semibold text-primary"
+              : "hidden lg:block font-semibold text-gray-500 hover:text-primary transition"
           }
         >
           Converter
@@ -32,12 +34,21 @@ const Navbar = () => (
           to="/youtube-to-mp3"
           className={({ isActive }) =>
             isActive
-              ? "font-semibold text-primary"
-              : "font-semibold text-gray-500 hover:text-primary transition"
+              ? "hidden lg:block font-semibold text-primary"
+              : "hidden lg:block font-semibold text-gray-500 hover:text-primary transition"
           }
         >
           YouTube to MP3
         </NavLink>
+      </li>
+      <li>
+        <Link
+          to="https://github.com/hsyntes/merntube-api"
+          target="_blank"
+          className="text-gray-500 hover:text-dark hover:dark:text-white lg:ms-3"
+        >
+          <FontAwesomeIcon icon={faGithub} size="2xl" />
+        </Link>
       </li>
     </ul>
   </>
