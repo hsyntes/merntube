@@ -77,7 +77,7 @@ const SearchVideo = () => {
           {videoURL && data?.items?.length === 0 && (
             <p className="text-gray-500 text-center">No results found.</p>
           )}
-          {data?.items?.length >= 1 && (
+          {data && videoURL && data?.items?.length >= 1 && (
             <Downloader data={data} videoURL={videoURL} />
           )}
         </Card.Footer>
