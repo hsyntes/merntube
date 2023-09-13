@@ -35,7 +35,7 @@ const Downloader = ({ videoURL, data }) => {
   // Start WebSocket and download video
   const handleDownload = () => {
     const webSocket = new WebSocket(
-      "wss://merntube-e9de51d6cb98.herokuapp.com/"
+      "wss://merntube-e9de51d6cb98.herokuapp.com"
     );
 
     webSocket.onopen = () => {
